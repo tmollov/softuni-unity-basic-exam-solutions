@@ -43,7 +43,7 @@ This goes like:
 
 ### Task 1
 
-Modify ``LoadRacingScene()`` methon in **MenuSceneManager.cs** like this:
+Modify ``LoadRacingScene()`` method in **MenuSceneManager.cs** like this:
 
 ``` csharp
 ...
