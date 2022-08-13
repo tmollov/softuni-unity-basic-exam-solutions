@@ -149,20 +149,20 @@ then we need to modify ``AddNewRoadItem()`` method and use **GetRoadItemFromPool
 
 ```csharp
 private void AddNewRoadItem()
-    {
-        var allRoadItemTypes = AllRoadTypesPrefabs.Length;
-        var roadItemType = Random.Range(0, allRoadItemTypes);
+{
+    var allRoadItemTypes = AllRoadTypesPrefabs.Length;
+    var roadItemType = Random.Range(0, allRoadItemTypes);
 
-        // Instead of Instantiating new item we are using GetRoadItemFromPool() method to get one
-        var newRoadItem = GetRoadItemFromPool(roadItemType);
-        if (newRoadItem is null)
-            return;
+    // Instead of Instantiating new item we are using GetRoadItemFromPool() method to get one
+    var newRoadItem = GetRoadItemFromPool(roadItemType);
+    if (newRoadItem is null)
+        return;
 
-        newRoadItem.gameObject.SetActive(true);
+    newRoadItem.gameObject.SetActive(true);
 
-        var xPosition = Random.Range(_xPositionMinMax.x, _xPositionMinMax.y);
-        var zPosition = Random.Range(_zPositionMinMax.x, _zPositionMinMax.y);
+    var xPosition = Random.Range(_xPositionMinMax.x, _xPositionMinMax.y);
+    var zPosition = Random.Range(_zPositionMinMax.x, _zPositionMinMax.y);
 
-        newRoadItem.transform.position = new Vector3(xPosition, 0f, zPosition);
-    }
+    newRoadItem.transform.position = new Vector3(xPosition, 0f, zPosition);
+}
 ```
