@@ -1,4 +1,4 @@
-# Regular exam - Unity 3D Basics (april 2021) @ softuni.bg
+# Retake exam - Unity 3D Basics (april 2021) @ softuni.bg
 
 ## Tasks
 
